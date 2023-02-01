@@ -4,6 +4,7 @@ import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import Typewriter from "typewriter-effect"
 import { useState, useEffect } from "react"
+import Button from '@mui/material/Button';
 
 function App() {
   const [showLinks, setShowLinks] = useState(false);
@@ -11,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowLinks(true);
-    }, 30000);
+    }, 20980);
   }, []);
 
   const init = useCallback(async engine => {
@@ -25,14 +26,7 @@ function App() {
   return (
   
   <div className="home">
-    <div className="main">
-        <Typewriter 
-        onInit ={(typewriter) => {
-          typewriter.typeString("You think you <br> don't need <br> to worry about <br> climate changes?").pauseFor(2000).deleteAll().typeString("ok, take a look <br> at this first!").start()
-          .pauseFor(1000);
-        }} />
-         {showLinks && <div className="btn">CHECK SOME DATA</div>}
-        </div>
+    
       <Particles
        options ={{
         particles: {
@@ -142,6 +136,28 @@ function App() {
        }}
         
        init = {init} />
+      <div className="main">
+        <Typewriter 
+        onInit ={(typewriter) => {
+          typewriter.typeString("You think you <br> don't need <br> to worry about <br> climate changes?").pauseFor(2000).deleteAll().typeString("ok, take a look <br> at this first!").start()
+          .pauseFor(1000);
+        }} />
+
+         {showLinks && <Button 
+         className ="btn"
+         variant="outlined" 
+         href="#" 
+         onClick={() => {
+          console.log('clicked');
+        }}
+         sx={{
+          ':hover': {
+            bgcolor: 'green', 
+            color: 'white',
+          },
+        }}
+  >CHECK SOME DATA</Button>}
+        </div>
     </div>
   );
 }
