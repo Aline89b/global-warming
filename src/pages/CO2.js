@@ -1,5 +1,5 @@
 import React from "react";
-import tempData from "../tempData.json"
+import CO2data from "../CO2data.json"
 import BarChart from "../components/barChart";
 import Navbar from "../components/navbar"
 import '../App.css';
@@ -8,12 +8,12 @@ import '../App.css';
 
 
 
-export default function Temperature(){
+export default function CO2(){
     const temperatureData = {
-        labels: tempData.result.map(data => Number(data.time).toFixed(0)),
+        labels: CO2data.co2.map(data => data.year),
         datasets: [{
-            label: "temperature",
-            data: tempData.result.map(data=> data.station)
+            label: "CO2",
+            data: CO2data.co2.map(data=> data.trend)
         }]
     }
 console.log(temperatureData)

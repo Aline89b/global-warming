@@ -1,4 +1,37 @@
+.navbar {
+    background-color: crimson;
+}
 
+ul {
+    display: flex;
+     margin-top: 0;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;    
+    font-size: 28px;
+    font-weight: bold;
+    background-color: crimson;
+}
+li{
+    padding: 2%;
+}
+
+.chart-table {
+    display:flex;
+    flex-direction: column;
+       
+}
+.chart {
+   margin: 0 auto;
+   width: 60%;
+}
+.chart-description {
+    text-align: center;
+    color: black;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    width: 60%;
+}
 
 
 

@@ -13,7 +13,7 @@ export default function Home(){
     useEffect(() => {
       setTimeout(() => {
         setShowLinks(true);
-      }, 20990);
+      }, 20999);
     }, []);
   
     const init = useCallback(async engine => {

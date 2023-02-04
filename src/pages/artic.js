@@ -1,19 +1,19 @@
 import React from "react";
-import tempData from "../tempData.json"
+import articData from "../articData.json"
 import BarChart from "../components/barChart";
 import Navbar from "../components/navbar"
 import '../App.css';
 
-
-
-
-
-export default function Temperature(){
+export default function Artic(){
     const temperatureData = {
-        labels: tempData.result.map(data => Number(data.time).toFixed(0)),
+        labels: articData.arcticData.map(data => Number(data.year)),
         datasets: [{
-            label: "temperature",
-            data: tempData.result.map(data=> data.station)
+            label: "area",
+            data: articData.arcticData.map(data=> data.area)
+        },
+        {
+            label: "extent",
+            data: articData.arcticData.map(data=> data.extent)
         }]
     }
 console.log(temperatureData)

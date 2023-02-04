@@ -5,7 +5,7 @@
     color:antiquewhite;
     font-size: 42px;
     font-weight: 800;
-    justify-content: start;
+    justify-content: flex-start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: url("climateChange.jpg") no-repeat;
     background-size: cover;
