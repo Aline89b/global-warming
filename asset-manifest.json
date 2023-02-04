@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/global-warming/static/css/main.3f51e661.css",
+    "main.js": "/global-warming/static/js/main.0497be8e.js",
+    "static/js/787.068c74d2.chunk.js": "/global-warming/static/js/787.068c74d2.chunk.js",
+    "static/media/climateChange.jpg": "/global-warming/static/media/climateChange.13155c7ccac53a311e89.jpg",
+    "index.html": "/global-warming/index.html",
+    "main.3f51e661.css.map": "/global-warming/static/css/main.3f51e661.css.map",
+    "main.0497be8e.js.map": "/global-warming/static/js/main.0497be8e.js.map",
+    "787.068c74d2.chunk.js.map": "/global-warming/static/js/787.068c74d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f51e661.css",
+    "static/js/main.0497be8e.js"
+  ]
+}
